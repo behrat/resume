@@ -1,0 +1,44 @@
+{% macro outline(items) %}
+{% for item in items recursive %}
+{% if item is string %}
+{{ ["* ",item]|join|wordwrap(79-(loop.depth*4+2))|indent(loop.depth*4,true)|indent(2,false) }}
+{% else %}
+{{ loop(item) -}}
+{% endif %}
+{% endfor %}
+{% endmacro %}
+{% set basics = resume.basics %}
+
+{{basics.name|upper}}
+
+{{basics.website}}
+{{basics.phone}}
+{{basics.email}}
+{% for (label, address) in basics.location.address.iteritems() %}
+{{address}} ({{label|capitalize}})
+{% endfor %}
+
+EDUCATION
+{% for degree in resume.education %}
+
+{{ degree.institution }}
+{{ degree.studyType }} in {{ degree.area }}
+GPA: {{degree.gpa}}
+{% if startDate %}{{degree.startDate}} - {% endif %}{{degree.endDate}}
+
+WORK EXPERIENCE
+{% for job in resume.work %}
+
+{{ job.company }}
+{{ job.position }}
+{{ job.location }}
+{{job.startDate}} - {{job.endDate}}
+{% if job.summary %}{{job.summary|wordwrap}}
+{% endif %}
+{{ outline(job.highlights) -}}
+{% endfor %}
+
+TECHNICAL SKILLS
+
+{{ outline(resume.skills[0].keywords) }}
+{% endfor %}
