@@ -6,7 +6,7 @@
     "website": "https://bradenehrat.com/",
     "location": {
       "address": {
-        "current": "1206 Wesley Ave Apt 9, Savoy IL 61874",
+        "current": "501 W Green St, Urbana IL 61801",
         "permanent": "729 N 1200 St, Shobonier IL 62885"
       },
       "postalCode": "61820",
@@ -33,7 +33,7 @@
     "website": "http://riverbed.com",
     "location": "Champaign, IL",
     "startDate": "Summer 2012, May 2013",
-    "endDate": "Present",
+    "endDate": "April 2015",
     "summary": "Riverbed makes products to optimize application protocols over low-bandwidth and high-latency networks",
     "highlights": [
                 "Built performance and feature tests for an Android application that optimized mobile VPN traffic",
@@ -57,7 +57,7 @@
     "endDate": "Present",
     "summary": "Dairy and grain operation owned by my family with about 130 milking cows and 900 farmed acres",
     "highlights": [
-                "Recently built a system and software to monitor cows using IP cameras viewed on a webpage and TVs",
+                "Built a system and software to monitor cows using IP cameras viewed on a webpage, TVs, and phones",
                 "Improved Internet access by using Multipath TCP to simultaneously utilize two ISPs",
                 "Currently building a system to automatically feed our cows, using a PLC with web-based control",
                 "Acquired practical, hands-on experience involving operating tractors and machinery, mechanical and electrical systems, troubleshooting, and caring for animals, all while developing a strong work ethic"
@@ -91,14 +91,20 @@
   "education": [{
     "institution": "University of Illinois at Urbana-Champaign",
     "area": "Computer Science",
-    "studyType": "Bachelor of Science",
+    "studyType": "Bachelor of Science (B.S.)",
     "endDate": "Graduated: May 2013",
     "gpa": "3.48/4.0"
+  },{
+    "institution": "University of Illinois at Urbana-Champaign",
+    "area": "Computer Science",
+    "studyType": "Master of Science (M.S.)",
+    "startDate": "2015",
+    "endDate": "2017 (Expected)"
   }],
   "skills": [{
     "name": "Technical Skills",
     "keywords": [
-      "C/C++, Python, Java, Javascript, MySQL, AWS, TCP/IP",
+      "Python, Go, C/C++, Java, Javascript, Django, MySQL, AWS, TCP/IP",
       "Relevant hobbies include audio/video production and electrical circuits"
     ]
   }]

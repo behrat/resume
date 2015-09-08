@@ -23,8 +23,8 @@ EDUCATION
 
 {{ degree.institution }}
 {{ degree.studyType }} in {{ degree.area }}
-GPA: {{degree.gpa}}
-{% if startDate %}{{degree.startDate}} - {% endif %}{{degree.endDate}}
+{% if degree.startDate %}{{degree.startDate}} - {% endif %}{{degree.endDate}}
+{% endfor %}
 
 WORK EXPERIENCE
 {% for job in resume.work %}
@@ -41,4 +41,3 @@ WORK EXPERIENCE
 TECHNICAL SKILLS
 
 {{ outline(resume.skills[0].keywords) }}
-{% endfor %}
