@@ -1,3 +1,4 @@
+import os
 import json
 import jinja2
 
@@ -12,6 +13,12 @@ jinja_env = jinja2.Environment(
 
 txt_template = jinja_env.get_template('template.txt')
 resume_txt = txt_template.render(resume=resume)
+
+try:
+    os.makedirs("output")
+except OSError as exception:
+    if exception.errno != errno.EEXIST:
+        raise
 
 with open("output/resume-ehrat.txt", "wb") as fh:
     fh.write(resume_txt.encode('utf-8'))
