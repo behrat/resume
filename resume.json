@@ -1,9 +1,9 @@
 {
   "basics": {
     "name": "Braden Ehrat",
-    "email": "braden@bradenehrat.com",
-    "phone": "618-322-3866",
-    "website": "https://bradenehrat.com/",
+    "email": "braden@ehrat.io",
+    "phone": "+1 618-322-3866",
+    "website": "https://ehrat.io/",
     "location": {
       "address": {
         "current": "501 W Green St, Urbana IL 61801",
@@ -32,7 +32,7 @@
     "position": "Software Quality Assurance Engineer",
     "website": "http://riverbed.com",
     "location": "Champaign, IL",
-    "startDate": "Summer 2012, May 2013",
+    "startDate": "Summer 2012 (Intern), May 2013 (Full-time)",
     "endDate": "April 2015",
     "summary": "Riverbed makes products to optimize application protocols over low-bandwidth and high-latency networks",
     "highlights": [
@@ -98,8 +98,8 @@
     "institution": "University of Illinois at Urbana-Champaign",
     "area": "Computer Science",
     "studyType": "Master of Science (M.S.)",
-    "startDate": "2015",
-    "endDate": "2017 (Expected)"
+    "startDate": "August 2015",
+    "endDate": "May 2017 (Expected)"
   }],
   "skills": [{
     "name": "Technical Skills",
