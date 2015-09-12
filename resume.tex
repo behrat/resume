@@ -9,7 +9,7 @@
 \documentclass[letterpaper,11pt]{article}
 
 %-----------------------------------------------------------
-\usepackage[empty]{fullpage}
+%\usepackage[empty]{fullpage}
 \usepackage{color}
 \definecolor{mygrey}{gray}{0.70}
 \raggedbottom
@@ -17,37 +17,41 @@
 \setlength{\tabcolsep}{0in}
 
 % Adjust margins to 0.5in on all sides
-\addtolength{\oddsidemargin}{-0.55in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.0in}
-\addtolength{\topmargin}{-0.5in}
-\addtolength{\textheight}{1.0in}
+%\addtolength{\oddsidemargin}{-0.55in}
+%\addtolength{\oddsidemargin}{-0.7in}
+%\addtolength{\evensidemargin}{-0.7in}
+%\addtolength{\evensidemargin}{-1.5in}
+%\addtolength{\textwidth}{1.0in}
+%\addtolength{\topmargin}{-0.5in}
+%\addtolength{\textheight}{1.0in}
+\usepackage[top=1cm, bottom=1cm, left=.9cm, right=.9cm]{geometry}
+\usepackage{nopageno}
 
 %-----------------------------------------------------------
 %Custom commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
 \newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
 \newcommand{\ressubheading}[4]{
-\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+\begin{tabular*}{18.5cm}{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
 		\textit{#3} & \textit{#4} \\
 \end{tabular*}\vspace{-6pt}}
 \newcommand{\resoneheading}[2]{
-\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+\begin{tabular*}{18.5cm}{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
 \end{tabular*}\vspace{-6pt}}
 \newcommand{\resoneheadingit}[2]{
-\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+\begin{tabular*}{18.5cm}{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & \textit{#2} \\
 \end{tabular*}\vspace{-6pt}}
 %-----------------------------------------------------------
 
 
 \begin{document}
-\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
-\textbf{\large Braden Ehrat} \\
+\begin{tabular*}{20cm}{l@{\extracolsep{\fill}}r}
+\textbf{\huge Braden Ehrat} & https://ehrat.io \\
 braden@ehrat.io & (Current) 501 W Green St, Urbana IL 61801\\
-618-322-3866 & (Permanent) 729 N 1200 St, Shobonier IL 62885\\
++1 618 322 3866 & (Permanent) 729 N 1200 St, Shobonier IL 62885\\
 \end{tabular*}
 \\
 
@@ -92,30 +96,40 @@ braden@ehrat.io & (Current) 501 W Green St, Urbana IL 61801\\
 \resheading{Work Experience}
 \begin{itemize}
 \item
+	\ressubheading{Dair-E-Land Holsteins}{Augsburg, IL}{Technician, Developer, and Laborer}{1999 -- Present}
+	\item[]{Dairy and grain operation owned by my family with about 130 milking cows and 900 farmed acres}\vspace{-6pt}
+	\begin{itemize}
+		\resitem{Improved Internet access by using Multipath TCP to simultaneously utilize two ISPs}
+		\resitem{Built a system and software to monitor cows using IP cameras viewed on a webpage, TVs, and phones}
+		\resitem{Currently building a system to automatically feed our cows, using a PLC with web-based control}
+		\resitem{Acquired practical, hands-on experience involving operating tractors and machinery, mechanical and electrical systems, troubleshooting, and caring for animals, all while developing a strong work ethic}
+	\end{itemize}
+\item
+	\ressubheading{Nyx Technology}{Chicago, IL}{DevOps Engineer}{Janurary 2014 -- August 2015}
+	\item[]{Nyx is a mobile app startup that allows customers to order food and drinks at resaurants and  bars}\vspace{-6pt}
+	\begin{itemize}
+		\resitem{Built the backend in Amazon Web Services to store the menu, login users, and take orders with payments}
+			\begin{itemize}
+				\resitem{Both Android and iOS clients communicate with the backend over a REST API}
+				\resitem{By following current best-practices, designed to be secure, scalable, and resilient to failure}
+			\end{itemize}
+	\end{itemize}
+\item
 	\ressubheading{Riverbed Technology}{Champaign, IL}{Software Quality Assurance Engineer}{Summer 2012 (Intern),  May 2013 -- April 2015 (Full-time)}
 	\item[]{Riverbed's products optimize application protocols over low-bandwidth and high-latency networks}\vspace{-6pt}
 	\begin{itemize}
-		\resitem{Built performance and feature tests for an Android application that optimized mobile VPN traffic}
-			\begin{itemize}
-				\resitem{Ran nightly tests and analyzed results to measure performance and detect obscure issues}
-				\resitem{Tested SSL optimization and wrote automated SSL setup for tests}
-			\end{itemize}
 		\resitem{Helped write automation to install and test releases of Riverbed's software for Microsoft Azure}
-		\resitem{Maintained  automation for testing optimization of the Microsoft Exchange protocol}
+		\resitem{Maintained automation for testing optimization of the Microsoft Exchange protocol}
+		\resitem{Built performance and feature tests for an Android application that optimized mobile SSL traffic}
+%			\begin{itemize}
+%				\resitem{Ran nightly tests and analyzed results to measure performance and detect obscure issues}
+%				\resitem{Tested SSL optimization and wrote automated SSL setup for tests}
+%			\end{itemize}
 		\resitem{Interned during Summer 2012}
 			\begin{itemize}
 				\resitem{Developed tool for crawling a website on a mobile browser to generate HTTP traffic for testing}
 				\resitem{Gained experience with Python, Android development, and Selenium WebDriver}
 			\end{itemize}
-	\end{itemize}
-\item
-	\ressubheading{Dair-E-Land Holsteins}{Augsburg, IL}{Technician, Developer, and Laborer}{1999 -- Present}
-	\item[]{Dairy and grain operation owned by my family with about 130 milking cows and 900 farmed acres}\vspace{-6pt}
-	\begin{itemize}
-		\resitem{Built a system and software to monitor cows using IP cameras viewed on a webpage, TVs, and phones}
-		\resitem{Improved Internet access by using Multipath TCP to simultaneously utilize two ISPs}
-		\resitem{Currently building a system to automatically feed our cows, using a PLC with web-based control}
-		\resitem{Acquired practical, hands-on experience involving operating tractors and machinery, mechanical and electrical systems, troubleshooting, and caring for animals, all while developing a strong work ethic}
 	\end{itemize}
 \item
 	\ressubheading{University of Illinois Computer Science Department}{Champaign, IL}{Undergraduate Research Assistant}{March 2011 -- May 2013}
