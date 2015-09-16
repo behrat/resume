@@ -1,0 +1,16 @@
+objective: null
+education:
+- *uiuc_ms
+- << : *uiuc_bs
+  highlights: []
+work:
+- *del
+- *nyx
+- *rvbd
+- <<: *locus
+  highlights:
+  - *locus-exp
+  - *locus-summer
+  - *locus-summer-detail
+- *nettech
+publications: null

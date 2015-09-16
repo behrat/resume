@@ -1,0 +1,131 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2010 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+%\usepackage[empty]{fullpage}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.70}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+%\addtolength{\oddsidemargin}{-0.55in}
+%\addtolength{\oddsidemargin}{-0.7in}
+%\addtolength{\evensidemargin}{-0.7in}
+%\addtolength{\evensidemargin}{-1.5in}
+%\addtolength{\textwidth}{1.0in}
+%\addtolength{\topmargin}{-0.5in}
+%\addtolength{\textheight}{1.0in}
+\usepackage[top=1cm, bottom=1cm, left=.9cm, right=.9cm]{geometry}
+\usepackage{nopageno}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{18.5cm}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+\newcommand{\resoneheading}[2]{
+\begin{tabular*}{18.5cm}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+\end{tabular*}\vspace{-6pt}}
+\newcommand{\resoneheadingit}[2]{
+\begin{tabular*}{18.5cm}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+\BLOCK{macro outline(items)}
+\BLOCK{for item in items recursive}
+\BLOCK{if loop.first}
+\VAR{"\\begin{itemize}"|indent(loop.depth*8-4,true)}
+\BLOCK{endif}
+\BLOCK{if item is string}
+\VAR{["\\resitem{",item,"}"]|join|indent(loop.depth*8,true)}
+\BLOCK{else}
+\VAR{loop(item) -}
+\BLOCK{endif}
+\BLOCK{if loop.last}
+\VAR{"\\end{itemize}"|indent(loop.depth*8-4,true)}
+\BLOCK{endif}
+\BLOCK{endfor}
+\BLOCK{endmacro}
+
+\begin{document}
+
+\BLOCK{ set basics = resume.basics }
+\begin{tabular*}{20cm}{l@{\extracolsep{\fill}}r}
+\textbf{\huge \VAR{basics.name}} & \VAR{basics.website} \\
+\VAR{basics.email} & (Current) \VAR{basics.location.address.current}\\
+\VAR{basics.phone} & (Permanent) \VAR{basics.location.address.permanent}\\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\BLOCK{if resume.objective}
+\resheading{Objective}
+\begin{itemize}
+\item[] \VAR{resume.objective}
+\end{itemize}
+\BLOCK{endif}
+
+\BLOCK{ for degree in resume.education }
+\BLOCK{if loop.first}
+\resheading{Education}
+\begin{itemize}
+\BLOCK{endif}
+\item[]
+    \ressubheading{\VAR{degree.institution}}{}{\BLOCK{if degree.studyType}\VAR{degree.studyType} in \VAR{degree.area}\BLOCK{endif}\BLOCK{if degree.gpa} \normalfont(\small{GPA: \VAR{degree.gpa}})\BLOCK{endif}}{\BLOCK{if degree.startDate}\VAR{degree.startDate} -- \BLOCK{endif}\VAR{degree.endDate}}
+\BLOCK{endfor}
+\BLOCK{if loop.last}\end{itemize}\BLOCK{endif}
+
+\BLOCK{for job in resume.work}
+\BLOCK{if loop.first}
+\vspace{0.1in}
+\resheading{Work Experience}
+\begin{itemize}
+\BLOCK{endif}
+\item
+    \ressubheading{\VAR{job.company}}{\VAR{job.location}}{\VAR{job.position}}{\VAR{job.startDate} -- \VAR{job.endDate}}
+    \BLOCK{if job.summary}
+    \item[]{\VAR{job.summary}}\vspace{-6pt}
+    \BLOCK{endif}
+\VAR{outline(job.highlights) -}
+\BLOCK{if loop.last}\end{itemize}\BLOCK{endif}
+\BLOCK{endfor}
+
+
+\resheading{Technical Skills}
+\VAR{outline(resume.skills[0].keywords)}
+
+\BLOCK{if resume.publications}
+%\newpage
+\resheading{Publications}
+\begin{itemize}
+\BLOCK{for pub in resume.publications}
+\resitem{
+    \textbf{\VAR{pub.type}:}
+    \VAR{pub.authors},
+    ``\VAR{pub.title}'',
+    \emph{\VAR{pub.publication}},
+    \BLOCK{if pub.location}
+    \VAR{pub.location},
+    \BLOCK{endif}
+    \VAR{pub.date}.}
+\BLOCK{endfor}
+\end{itemize}
+\BLOCK{endif}
+
+\end{document}

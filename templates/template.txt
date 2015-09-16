@@ -22,8 +22,11 @@ EDUCATION
 {% for degree in resume.education %}
 
 {{ degree.institution }}
+{% if degree.studyType %}
 {{ degree.studyType }} in {{ degree.area }}
+{% endif %}
 {% if degree.startDate %}{{degree.startDate}} - {% endif %}{{degree.endDate}}
+{{ outline(degree.highlights) -}}
 {% endfor %}
 
 WORK EXPERIENCE

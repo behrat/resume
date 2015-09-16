@@ -1,0 +1,163 @@
+basics: &basics
+  name: Braden Ehrat
+  email: braden@ehrat.io
+  phone: +1 618 322 3866
+  website: https://ehrat.io
+  location:
+    address:
+      current: 501 W Green St, Urbana IL 61801
+      permanent: 729 N 1200 St, Shobonier IL 62885
+    city: Champaign
+    countryCode: US
+    postalCode: '61820'
+    region: IL
+  profiles:
+  - network: LinkedIn
+    url: https://www.linkedin.com/in/bradenehrat
+  - network: GitHub
+    url: https://github.com/behrat
+    username: behrat
+  - netowrk: Facebook
+    url: https://www.facebook.com/bradenehrat
+    username: bradenehrat
+objective: &objective To object a summer 2016 intership
+education:
+- &uiuc_ms
+  institution: University of Illinois at Urbana-Champaign
+  location: Champaign, IL
+  area: Computer Science
+  endDate: May 2017 (Expected)
+  startDate: August 2015
+  studyType: Master of Science (M.S.)
+- &uiuc_bs 
+  institution: University of Illinois at Urbana-Champaign
+  location: Champaign, IL
+  area: Computer Science
+  endDate: Graduated May 2013
+  gpa: 3.48/4.0
+  studyType: Bachelor of Science (B.S.)
+  highlights:
+    - "College of Engineering Dean's List for Academic Excellence - Fall 2009, Spring 2012"
+- &hs
+  institution: Vandalia Community High School
+  location: Vandalia, IL
+  gpa: 4.61/5.0
+  endDate: Graduated May 2009
+  highlights:
+    - "ACT: 30 (Math Score: 35) and Illinois State Scholar"
+- &kc
+  institution: Kaskaskia College
+  location: Centrailia, IL
+  gpa: 3.8/4.0
+  endDate: Graduated May 2009
+  highlights:
+    - Earned 56 credit hours concurrent to high school 
+work:
+- &del
+  company: Dair-E-Land Holsteins
+  location: Augsburg, IL
+  position: Technician, Developer, and Laborer
+  startDate: '1999'
+  endDate: Present
+  summary: Dairy and grain operation owned by my family with about 130 milking cows
+    and 900 farmed acres
+  highlights:
+  - Improved Internet access by using Multipath TCP to simultaneously utilize two
+    ISPs
+  - Built a system and software to monitor cows using IP cameras viewed on a webpage,
+    TVs, and phones
+  - Currently building a system to automatically feed our cows, using a PLC with web-based
+    control
+  - Acquired practical, hands-on experience involving operating tractors and machinery,
+    mechanical and electrical systems, troubleshooting, and caring for animals, all
+    while developing a strong work ethic
+- &nyx
+  company: Nyx Technology
+  location: Chicago, IL
+  position: DevOps Engineer
+  startDate: January 2014
+  endDate: August 2015
+  summary: Nyx is a mobile app startup that allows customers to order food and drinks at resaurants and bars
+  highlights:
+  - Built the backend in Amazon Web Services to store the menu, login users, and take
+    orders with payments
+  - - Both Android and iOS clients communicate with the backend over a REST API
+    - By following current best-practices, designed to be secure, scalable, and resilient
+      to failure
+- &rvbd
+  company: Riverbed Technology
+  location: Champaign, IL
+  website: http://riverbed.com
+  startDate: Summer 2012 (Intern), May 2013
+  endDate: April 2015 (Full-time)
+  position: Software Quality Assurance Engineer
+  summary: Riverbed makes products to optimize application protocols over low-bandwidth
+    and high-latency networks
+  highlights:
+  - "Helped write automation to install and test releases of Riverbed's software for
+    Microsoft Azure"
+  - Maintained automation for testing optimization of the Microsoft Exchange protocol
+  - Built performance and feature tests for an Android application that optimized mobile SSL traffic 
+  - Interned during Summer 2012
+  - - Developed tool for crawling a website on a mobile browser to generate HTTP traffic
+      for testing
+    - Gained experience with Python, Android development, and Selenium WebDriver
+- &locus
+  company: University of Illinois Computer Science Department
+  endDate: May 2013
+  summary: "Developed Locus: A vehicular-based content management network for location-centric applications"
+  highlights:
+  - &locus-exp
+    Gained experience with Wi-Fi, OBDII, GPS, Android, energy efficient protocols
+    and DTN protocols
+  - The team presented two demos, a paper, and a poster at conferences, including
+    ACM CHANTS, SIGMOBILE, MobiOpp, and MobiCom
+  - Second-place best poster at the MobiCom 2012 Student Research Competition
+  - Won second-place best poster at CHANTS 2012
+  - &locus-summer
+    Worked full-time during Summer 2011
+  - &locus-summer-detail
+    - Wrote software enabling cars to connect to University access points, create
+      ad-hoc networks, collect car location and telemetry data, and send collected
+      information to a central server
+    - Designed and implemented a web interface to play back historical and live data
+  location: Champaign, IL
+  position: Undergraduate Research Assistant
+  startDate: March 2011
+- &nettech
+  company: University of Illinois Housing Department
+  endDate: May 2012
+  highlights:
+  - Provided technical assistance for University Housing residents and responded to
+    network problems
+  location: Champaign, IL
+  position: Network Technician
+  startDate: August 2010
+skills:
+- keywords:
+  - Python, Go, C/C++, Java, Javascript, Django, MySQL, AWS, TCP/IP
+  - Relevant hobbies include audio/video production and electrical circuits
+  name: Technical Skills
+publications:
+- type: Journal Article
+  authors:  Crepaldi, R., R. Beavers, B. Ehrat, J. Sze, M. Jaeger, and R. Kravets
+  title: "ACM Mobicom 2012 Poster: LoadingZones - Leveraging Street Parking to Enable Vehicular Internet Access"
+  publication: ACM SIGMOBILE Mobile Computing and Communications Review (MC2R)
+  date: 2012
+- type: Conference Article
+  authors: Crepaldi, R., R. Beavers, B. Ehrat, J. Sze, M. Jaeger, and R. Kravets
+  title: "LoadingZones: Leveraging Street Parking to Enable Vehicular Internet Access"
+  publication: 7th Workshop on Challenged Networks (CHANTS 2012)
+  location: Istanbul
+  date: 08/2012
+- type: Conference Demo
+  authors: Crepaldi, R., R. Beavers, B. Ehrat, and R. Kravets
+  title: Illinois Vehicular Project, Live Data Sampling and Opportunistic Internet Connectivity
+  publication: The Third ACM/SIGMOBILE International Workshop on Mobile Opportunistic Networking (MobiOpp)
+  location: Zurich
+  date: 2012
+- type: Conference Poster
+  authors: Crepaldi, R., R. Beavers, B. Ehrat, J. Sze, M. Jaeger, and R. Kravets
+  title: "LoadingZones: Leveraging Street Parking to Enable Vehicular Internet Access"
+  publication: The 18th Annual International Conference on Mobile Computing and Networking (MOBICOM 2012)
+  date: 2012
