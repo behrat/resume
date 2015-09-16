@@ -103,7 +103,7 @@ work:
       for testing
     - Gained experience with Python, Android development, and Selenium WebDriver
 - &locus
-  company: University of Illinois Computer Science Department
+  company: University of Illinois Computer Science
   endDate: May 2013
   summary: "Developed Locus: A vehicular-based content management network for location-centric applications"
   highlights:
@@ -125,7 +125,7 @@ work:
   position: Undergraduate Research Assistant
   startDate: March 2011
 - &nettech
-  company: University of Illinois Housing Department
+  company: University of Illinois Housing
   endDate: May 2012
   highlights:
   - Provided technical assistance for University Housing residents and responded to
@@ -135,7 +135,7 @@ work:
   startDate: August 2010
 skills:
 - keywords:
-  - Python, Go, C/C++, Java, Javascript, Django, MySQL, AWS, TCP/IP
+  - Python, Go, C/C++, Java, Javascript, MySQL, AWS, TCP/IP
   - Relevant hobbies include audio/video production and electrical circuits
   name: Technical Skills
 publications:
