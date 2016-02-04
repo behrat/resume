@@ -106,6 +106,22 @@
 \BLOCK{if loop.last}\end{itemize}\BLOCK{endif}
 \BLOCK{endfor}
 
+\BLOCK{if resume.other}
+\BLOCK{for job in resume.other}
+\BLOCK{if loop.first}
+\vspace{0.1in}
+\resheading{Teaching Experience}
+\begin{itemize}
+\BLOCK{endif}
+\item
+    \ressubheading{\VAR{job.company}}{\VAR{job.startDate}}{\VAR{job.position}}{}
+    \BLOCK{if job.summary}
+    \item[]{\VAR{job.summary}}\vspace{-6pt}
+    \BLOCK{endif}
+\VAR{outline(job.highlights) -}
+\BLOCK{if loop.last}\end{itemize}\BLOCK{endif}
+\BLOCK{endfor}
+\BLOCK{endif}
 
 \resheading{Technical Skills}
 \VAR{outline(resume.skills[0].keywords)}

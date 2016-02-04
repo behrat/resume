@@ -17,7 +17,7 @@ basics: &basics
   - network: GitHub
     url: https://github.com/behrat
     username: behrat
-  - netowrk: Facebook
+  - network: Facebook
     url: https://www.facebook.com/bradenehrat
     username: bradenehrat
 objective: &objective To object a summer 2016 intership
@@ -51,7 +51,7 @@ education:
   gpa: 3.8/4.0
   endDate: Graduated May 2009
   highlights:
-    - Earned 56 credit hours concurrent to high school 
+    - Earned 56 credit hours concurrent to high school
 work:
 - &del
   company: Dair-E-Land Holsteins
@@ -135,8 +135,10 @@ work:
   startDate: August 2010
 skills:
 - keywords:
-  - Python, Go, C/C++, Java, Javascript, MySQL, AWS, TCP/IP
-  - Relevant hobbies include audio/video production and electrical circuits
+  - &prog_skills
+    Python, Go, C/C++, Java, Javascript, MySQL, AWS, TCP/IP
+  - &av_elec
+    Relevant hobbies include audio/video production and electrical circuits
   name: Technical Skills
 publications:
 - type: Journal Article
@@ -161,3 +163,20 @@ publications:
   title: "LoadingZones: Leveraging Street Parking to Enable Vehicular Internet Access"
   publication: The 18th Annual International Conference on Mobile Computing and Networking (MOBICOM 2012)
   date: 2012
+other: &other
+- &cs125
+  company: University of Illinois Course Assistant
+  position: CS 125
+  startDate: Spring 2010
+  highlights:
+  - Assisted with introductory Computer Science course by co-teaching a lab with another student
+  - Worked on a project to let future students program small robots
+languages:
+  proficient:
+  - python
+  - javascript
+  - go
+  - C++
+  - Java
+  - Javascript
+  familiar: 

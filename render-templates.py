@@ -1,21 +1,36 @@
 import os
 import errno
 import yaml
+import json
 import jinja2
 
 with open('resume.yaml', 'r') as f:
     resume_data = f.read()
 
 with open('configs/default.yaml', 'r') as f:
-    resume_config = f.read()
+    default_config = f.read()
 
-resume = yaml.load(resume_data + resume_config)
+
+resume_yaml = resume_data + default_config
+
+with open('configs/ta.yaml', 'r') as f:
+    resume_yaml += f.read()
+
+print resume_yaml
+
+resume = yaml.load(resume_yaml)
 
 try:
     os.makedirs("output")
 except OSError as exception:
     if exception.errno != errno.EEXIST:
         raise
+
+with open("output/resume-ehrat.json", "wb") as fh:
+    fh.write(json.dumps(resume, indent=4))
+
+with open("output/resume-ehrat.yaml", "wb") as fh:
+    fh.write(yaml.dump(resume, default_flow_style=False))
 
 JINJA_TEMPLATES_FOLDER = 'templates'
 jinja_loader = jinja2.FileSystemLoader(JINJA_TEMPLATES_FOLDER)
