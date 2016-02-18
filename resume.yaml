@@ -27,15 +27,15 @@ education:
   location: Champaign, IL
   area: Computer Science
   endDate: May 2017 (Expected)
-  startDate: August 2015
-  studyType: Master of Science (M.S.)
+#  startDate: August 2015
+  studyType: Master of Science
 - &uiuc_bs 
   institution: University of Illinois at Urbana-Champaign
   location: Champaign, IL
   area: Computer Science
-  endDate: Graduated May 2013
+  endDate: May 2013
   gpa: 3.48/4.0
-  studyType: Bachelor of Science (B.S.)
+  studyType: Bachelor of Science
   highlights:
     - "College of Engineering Dean's List for Academic Excellence - Fall 2009, Spring 2012"
 - &hs
@@ -53,6 +53,17 @@ education:
   highlights:
     - Earned 56 credit hours concurrent to high school
 work:
+- &ra
+  company: UIUC Department of Computer Science
+  location: Champaign, IL
+  startDate: August 2015
+  endDate: Present
+  position: Research and Teaching Assistant
+#  summary: 
+  highlights:
+  - "Working Out with IoT: Pairing and Automated Data Collection in a Gym Environment"
+  - - Collected data from public weight machines and user-worn sensors, all while preserving user privacy
+    - "Processed the data through Google Cloud products: PubSub, BigQuery, Dataflow and Endpoints"
 - &del
   company: Dair-E-Land Holsteins
   location: Augsburg, IL
@@ -62,68 +73,58 @@ work:
   summary: Dairy and grain operation owned by my family with about 130 milking cows
     and 900 farmed acres
   highlights:
-  - Improved Internet access by using Multipath TCP to simultaneously utilize two
+  - &autofeed Built a system to automatically feed our cows, using a PLC with web-based control
+  - &mptcp Improved Internet access by using Multipath TCP to simultaneously utilize two
     ISPs
-  - Built a system and software to monitor cows using IP cameras viewed on a webpage,
+  - &cowtv Enabled remote monitoring of cows through IP cameras viewed on a webpage,
     TVs, and phones
-  - Currently building a system to automatically feed our cows, using a PLC with web-based
-    control
-  - Acquired practical, hands-on experience involving operating tractors and machinery,
-    mechanical and electrical systems, troubleshooting, and caring for animals, all
-    while developing a strong work ethic
+  - &practical Acquired practical, hands-on experience involving operating tractors and machinery, mechanical and electrical systems, troubleshooting, and caring for animals, all while developing a strong work ethic
 - &nyx
   company: Nyx Technology
   location: Chicago, IL
   position: DevOps Engineer
   startDate: January 2014
   endDate: August 2015
-  summary: Nyx is a mobile app startup that allows customers to order food and drinks at resaurants and bars
+  summary: Nyx is a startup that allows customers to order food and drinks on their  mobile device at resaurants and bars
   highlights:
-  - Built the backend in Amazon Web Services to store the menu, login users, and take
-    orders with payments
+  - Developed a backend in Amazon Web Services to store a menu, login users, take orders with payments
   - - Both Android and iOS clients communicate with the backend over a REST API
-    - By following current best-practices, designed to be secure, scalable, and resilient
-      to failure
+    - Designed to be secure, scalable, and resilient to failure by following current best practices
 - &rvbd
   company: Riverbed Technology
   location: Champaign, IL
   website: http://riverbed.com
-  startDate: Summer 2012 (Intern), May 2013
-  endDate: April 2015 (Full-time)
+  startDate: May 2013
+  endDate: April 2015
   position: Software Quality Assurance Engineer
-  summary: Riverbed makes products to optimize application protocols over low-bandwidth
-    and high-latency networks
+  summary: "Riverbed's products optimize applications and user experiences over low-bandwidth and high-latency networks"
   highlights:
-  - "Helped write automation to install and test releases of Riverbed's software for
-    Microsoft Azure"
-  - Maintained automation for testing optimization of the Microsoft Exchange protocol
-  - Built performance and feature tests for an Android application that optimized mobile SSL traffic 
-  - Interned during Summer 2012
+  - &azure "Wrote automation to install and test releases of Riverbed's software for Microsoft Azure"
+  - &exchange Maintained automation for testing optimization of the Microsoft Exchange protocol
+  - &android Built performance and feature tests for an Android application that optimized mobile SSL traffic 
+  - &intern12 Interned during Summer 2012 to build performance tests for an Android application that optimized mobile SSL traffic
+  - &intern Tested performance of optimized SSL traffic on Android (Summer 2012 Intern)
   - - Developed tool for crawling a website on a mobile browser to generate HTTP traffic
       for testing
     - Gained experience with Python, Android development, and Selenium WebDriver
 - &locus
-  company: University of Illinois Computer Science
+  company: UIUC Department of Computer Science
+  startDate: March 2011
   endDate: May 2013
+  position: Undergraduate Research Assistant
+  location: Champaign, IL
   summary: "Developed Locus: A vehicular-based content management network for location-centric applications"
   highlights:
-  - &locus-exp
-    Gained experience with Wi-Fi, OBDII, GPS, Android, energy efficient protocols
-    and DTN protocols
-  - The team presented two demos, a paper, and a poster at conferences, including
-    ACM CHANTS, SIGMOBILE, MobiOpp, and MobiCom
+  - &locus-exp Gained experience with Wi-Fi, OBDII, GPS, Android, energy efficient protocols and DTN protocols
+  - &locus-presentation The team presented two demos, a paper, and a poster at conferences, including ACM CHANTS, SIGMOBILE, MobiOpp, and MobiCom
   - Second-place best poster at the MobiCom 2012 Student Research Competition
   - Won second-place best poster at CHANTS 2012
   - &locus-summer
     Worked full-time during Summer 2011
   - &locus-summer-detail
-    - Wrote software enabling cars to connect to University access points, create
-      ad-hoc networks, collect car location and telemetry data, and send collected
-      information to a central server
-    - Designed and implemented a web interface to play back historical and live data
-  location: Champaign, IL
-  position: Undergraduate Research Assistant
-  startDate: March 2011
+    - &locus-software-verbose  Wrote software enabling cars to connect to University access points, create ad-hoc networks, collect car location and telemetry data, and send collected information to a central server
+    - &locus-software Wrote software to collect car location and telemetry data through access points and ad-hoc networks
+    - &locus-webapp Designed and implemented a web interface to play back historical and live data
 - &nettech
   company: University of Illinois Housing
   endDate: May 2012
@@ -135,9 +136,9 @@ work:
   startDate: August 2010
 skills:
 - keywords:
-  - &prog_skills
-    Python, Go, C/C++, Java, Javascript, MySQL, AWS, TCP/IP
-  - &av_elec
+  - &prog-skills
+    Python, Go, C/C++, Java, Javascript, SQL, AWS, TCP/IP, OSX, Linux
+  - &av-elec
     Relevant hobbies include audio/video production and electrical circuits
   name: Technical Skills
 publications:
@@ -173,9 +174,9 @@ other: &other
   - Worked on a project to let future students program small robots
 languages:
   proficient:
-  - python
-  - javascript
-  - go
+  - Python
+  - Javascript
+  - Go
   - C++
   - Java
   - Javascript

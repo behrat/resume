@@ -4,14 +4,26 @@ education:
 - << : *uiuc_bs
   highlights: []
 work:
-- *del
+- *ra
+- <<: *del
+  highlights:
+  - *autofeed
+  - *mptcp
+  - *cowtv
 - *nyx
-- *rvbd
+- <<: *rvbd
+  highlights:
+  - *azure
+  - *exchange
+  - *intern
 - <<: *locus
   highlights:
   - *locus-exp
-  - *locus-summer
-  - *locus-summer-detail
+  - *locus-software
+  - *locus-webapp
 - *nettech
+skills:
+- keywords:
+  - *prog-skills
 other: null
 publications: null

@@ -13,10 +13,10 @@ with open('configs/default.yaml', 'r') as f:
 
 resume_yaml = resume_data + default_config
 
-with open('configs/ta.yaml', 'r') as f:
-    resume_yaml += f.read()
+#with open('configs/ta.yaml', 'r') as f:
+#    resume_yaml += f.read()
 
-print resume_yaml
+#print resume_yaml
 
 resume = yaml.load(resume_yaml)
 
