@@ -11,5 +11,5 @@ all: $(OUTPUT)
 $(OUTPUT): $(INPUT)
 	python render-templates.py
 
-deploy: 
+publish: 
 	scp $(OUTPUT) braden@origin.behrat.net:/ebs/www/bradenehrat.com/html/
