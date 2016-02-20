@@ -10,9 +10,9 @@ __TOC__
 <div class="large-5 pull-7 columns">
 
 ==Download==
-* PDF: [//{{SERVERNAME}}/resume-ehrat.pdf resume-ehrat.pdf]
-* TEXT: [//{{SERVERNAME}}/resume-ehrat.txt resume-ehrat.txt]
-* JSON: [//{{SERVERNAME}}/resume-ehrat.json resume-ehrat.json]
+* PDF: <html><a target="_blank" href="/resume-ehrat.pdf">resume-ehrat.pdf</a></html>
+* TEXT: <html><a target="_blank" href="/resume-ehrat.txt">resume-ehrat.txt</a></html>
+* JSON: <html><a target="_blank" href="/resume-ehrat.json">resume-ehrat.json</a></html>
 
 ==LinkedIn==
 <div style="text-align:center;margin-top:20px">{{MyLinkedInProfileBadge}}</div>
