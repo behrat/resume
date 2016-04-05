@@ -87,7 +87,7 @@
 \begin{itemize}
 \BLOCK{endif}
 \item[]
-    \ressubheading{\VAR{degree.institution}}{}{\BLOCK{if degree.studyType}\VAR{degree.studyType} in \VAR{degree.area}\BLOCK{endif}\BLOCK{if degree.gpa} \normalfont(\small{GPA: \VAR{degree.gpa}})\BLOCK{endif}}{\BLOCK{if degree.startDate}\VAR{degree.startDate} -- \BLOCK{endif}\VAR{degree.endDate}}
+    \ressubheading{\VAR{degree.institution}}{}{\BLOCK{if degree.studyType}\VAR{degree.studyType} in \VAR{degree.area}\BLOCK{endif}\BLOCK{if degree.gpa} \normalfont{\scriptsize{(GPA: \VAR{degree.gpa})}}\BLOCK{endif}}{\BLOCK{if degree.startDate}\VAR{degree.startDate} -- \BLOCK{endif}\VAR{degree.endDate}}
 \BLOCK{endfor}
 \BLOCK{if loop.last}\end{itemize}\BLOCK{endif}
 
