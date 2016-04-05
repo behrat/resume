@@ -136,7 +136,7 @@ work:
 skills:
 - keywords:
   - &prog-skills
-    Python, Go, C/C++, Java, Javascript, SQL, AWS, TCP/IP, OSX, Linux
+    Python, Go, Java, C, C++, JavaScript, SQL, TCP/IP, AWS, OSX, Linux
   - &av-elec
     Relevant hobbies include audio/video production and electrical circuits
   name: Technical Skills
