@@ -12,4 +12,4 @@ $(OUTPUT): $(INPUT)
 	python render-templates.py
 
 publish: 
-	scp $(OUTPUT) braden@origin.behrat.net:/ebs/www/bradenehrat.com/html/
+	rsync --verbose --update $(OUTPUT) braden@origin.behrat.net:/ebs/www/bradenehrat.com/html/
