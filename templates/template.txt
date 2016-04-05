@@ -29,7 +29,7 @@ EDUCATION
 {{ outline(degree.highlights) -}}
 {% endfor %}
 
-WORK EXPERIENCE
+EXPERIENCE
 {% for job in resume.work %}
 
 {{ job.company }}
@@ -41,6 +41,6 @@ WORK EXPERIENCE
 {{ outline(job.highlights) -}}
 {% endfor %}
 
-TECHNICAL SKILLS
+SKILLS
 
 {{ outline(resume.skills[0].keywords) }}

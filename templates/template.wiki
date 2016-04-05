@@ -47,7 +47,7 @@ __TOC__
 
 <block>for job in resume.work</block>
 <block>if loop.first</block>
-== Work Experience ==
+== Experience ==
 <block>endif</block>
 <div class="row">
 <div class="large-9 columns"><h3><var>job.company</var></h3>''<var>job.position</var>''</div>
@@ -61,7 +61,7 @@ __TOC__
 
 <block>endfor</block>
 
-== Technical Skills ==
+== Skills ==
 <var>outline(resume.skills[0].keywords)</var>
 
 {{hCardHidden}}
