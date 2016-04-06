@@ -61,7 +61,7 @@ work:
   position: Research and Teaching Assistant
   summary: "Research demo: Working Out with IoT - Pairing and Automated Data Collection in a Gym Environment"
   highlights:
-    - Collected data from public weight machines and user-worn sensors, all while preserving user privacy
+    - Wirelessly collected metrics from weight machines and user-wearable sensors, while preserving user privacy
     - "Processed the data through Google Cloud products: PubSub, BigQuery, Dataflow and Endpoints"
 - &del
   company: Dair-E-Land Holsteins
@@ -102,7 +102,7 @@ work:
   - &exchange Maintained automation for testing optimization of the Microsoft Exchange protocol
   - &android Built performance and feature tests for an Android application that optimized mobile SSL traffic 
   - &intern12 Interned during Summer 2012 to build performance tests for an Android application that optimized mobile SSL traffic
-  - &intern Tested performance of optimized SSL traffic on Android (Summer 2012 Intern)
+  - &intern Tested performance of optimized SSL traffic on Android (Summer 2012 Internship)
   - - Developed tool for crawling a website on a mobile browser to generate HTTP traffic
       for testing
     - Gained experience with Python, Android development, and Selenium WebDriver
