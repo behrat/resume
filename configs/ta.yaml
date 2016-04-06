@@ -1,0 +1,13 @@
+work:
+- *del
+- *nyx
+- *rvbd
+- <<: *locus
+  highlights:
+  - *locus-exp
+  - *locus-summer
+  - *locus-summer-detail
+other: *other
+skills:
+- keywords:
+  - *prog_skills
