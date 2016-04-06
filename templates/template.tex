@@ -87,14 +87,14 @@
 \begin{itemize}
 \BLOCK{endif}
 \item[]
-    \ressubheading{\VAR{degree.institution}}{}{\BLOCK{if degree.studyType}\VAR{degree.studyType} in \VAR{degree.area}\BLOCK{endif}\BLOCK{if degree.gpa} \normalfont(\small{GPA: \VAR{degree.gpa}})\BLOCK{endif}}{\BLOCK{if degree.startDate}\VAR{degree.startDate} -- \BLOCK{endif}\VAR{degree.endDate}}
+    \ressubheading{\VAR{degree.institution}}{}{\BLOCK{if degree.studyType}\VAR{degree.studyType} in \VAR{degree.area}\BLOCK{endif}\BLOCK{if degree.gpa} \normalfont{\scriptsize{(GPA: \VAR{degree.gpa})}}\BLOCK{endif}}{\BLOCK{if degree.startDate}\VAR{degree.startDate} -- \BLOCK{endif}\VAR{degree.endDate}}
 \BLOCK{endfor}
 \BLOCK{if loop.last}\end{itemize}\BLOCK{endif}
 
 \BLOCK{for job in resume.work}
 \BLOCK{if loop.first}
 \vspace{0.1in}
-\resheading{Work Experience}
+\resheading{Experience}
 \begin{itemize}
 \BLOCK{endif}
 \item
@@ -123,7 +123,7 @@
 \BLOCK{endfor}
 \BLOCK{endif}
 
-\resheading{Technical Skills}
+\resheading{Skills}
 \VAR{outline(resume.skills[0].keywords)}
 
 \BLOCK{if resume.publications}
