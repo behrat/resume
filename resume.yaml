@@ -61,7 +61,7 @@ work:
   position: Research and Teaching Assistant
   summary: "Research demo: Working Out with IoT - Pairing and Automated Data Collection in a Gym Environment"
   highlights:
-    - Wirelessly collected metrics from weight machines and user-wearable sensors, while preserving user privacy
+    - Collected metrics through Bluetooth LE sensors on gym machines and users, while preserving user privacy
     - "Processed the data through Google Cloud products: PubSub, BigQuery, Dataflow and Endpoints"
 - &del
   company: Dair-E-Land Holsteins
