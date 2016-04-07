@@ -1,1 +1,3 @@
 output
+*.cookies
+.DS_Store

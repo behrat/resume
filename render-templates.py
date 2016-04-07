@@ -1,4 +1,5 @@
 import os
+import sys
 import errno
 import yaml
 import json
@@ -7,29 +8,36 @@ import jinja2
 with open('resume.yaml', 'r') as f:
     resume_data = f.read()
 
+template = "default"
+
 with open('configs/default.yaml', 'r') as f:
     default_config = f.read()
 
-
 resume_yaml = resume_data + default_config
 
-#with open('configs/ta.yaml', 'r') as f:
-#    resume_yaml += f.read()
+config = None
+if len(sys.argv) > 1:
+    config = sys.argv[1]
+    with open('configs/%s.yaml' % config, 'r') as f:
+        resume_yaml += f.read()
 
 #print resume_yaml
 
 resume = yaml.load(resume_yaml)
 
+output_dir = "output"
+if config:
+    output_dir += "/" + config
 try:
-    os.makedirs("output")
+    os.makedirs(output_dir)
 except OSError as exception:
     if exception.errno != errno.EEXIST:
         raise
 
-with open("output/resume-ehrat.json", "wb") as fh:
+with open(output_dir + "/resume-ehrat.json", "wb") as fh:
     fh.write(json.dumps(resume, indent=4))
 
-with open("output/resume-ehrat.yaml", "wb") as fh:
+with open(output_dir + "/resume-ehrat.yaml", "wb") as fh:
     fh.write(yaml.dump(resume, default_flow_style=False))
 
 JINJA_TEMPLATES_FOLDER = 'templates'
@@ -44,7 +52,7 @@ txt_jinja_env = jinja2.Environment(
 txt_template = txt_jinja_env.get_template('template.txt')
 resume_txt = txt_template.render(resume=resume)
 
-with open("output/resume-ehrat.txt", "wb") as fh:
+with open(output_dir + "/resume-ehrat.txt", "wb") as fh:
     fh.write(resume_txt.encode('utf-8'))
 
 latex_jinja_env = jinja2.Environment(
@@ -62,7 +70,7 @@ latex_jinja_env = jinja2.Environment(
 latex_template = latex_jinja_env.get_template('template.tex')
 resume_tex = latex_template.render(resume=resume)
 
-with open("output/resume-ehrat.tex", "wb") as fh:
+with open(output_dir + "/resume-ehrat.tex", "wb") as fh:
     fh.write(resume_tex.encode('utf-8'))
 
 wiki_jinja_env = jinja2.Environment(
@@ -80,5 +88,5 @@ wiki_jinja_env = jinja2.Environment(
 wiki_template = wiki_jinja_env.get_template('template.wiki')
 wiki_resume = wiki_template.render(resume=resume)
 
-with open("output/resume-ehrat.wiki", "wb") as fh:
+with open(output_dir + "/resume-ehrat.wiki", "wb") as fh:
     fh.write(wiki_resume.encode('utf-8'))
