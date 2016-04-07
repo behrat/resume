@@ -25,7 +25,7 @@ upload: $(UPLOAD_OUTPUT)
 	rsync --verbose --update $(OUTPUT) braden@origin.behrat.net:/ebs/www/bradenehrat.com/html/
 
 confirm:
-	diff <(curl $(WIKI_RAW_URL)) output/resume-ehrat.wiki | exit 0
+	diff <(curl $(WIKI_RAW_URL)) output/resume-ehrat.wiki || exit 0
 	read -p "Publish differences? (y/n)" CHOICE && [ "$$CHOICE" == "y" ]
 
 post: confirm
