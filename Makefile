@@ -22,7 +22,7 @@ output/resume-ehrat.pdf: output/resume-ehrat.tex
 	cd output; pdflatex resume-ehrat.tex; cd ..
 
 upload: $(UPLOAD_OUTPUT)
-	rsync --verbose --update $(OUTPUT) braden@origin.behrat.net:/ebs/www/bradenehrat.com/html/
+	rsync --verbose --update $(UPLOAD_OUTPUT) braden@origin.behrat.net:/ebs/www/bradenehrat.com/html/
 
 confirm:
 	diff <(curl $(WIKI_RAW_URL)) output/resume-ehrat.wiki || exit 0
