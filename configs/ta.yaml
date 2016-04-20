@@ -7,7 +7,7 @@ work:
   - *locus-exp
   - *locus-summer
   - *locus-summer-detail
-other: *other
 skills:
 - keywords:
-  - *prog_skills
+  - *prog-skills
+other: *other
