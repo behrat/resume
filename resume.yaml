@@ -171,6 +171,14 @@ other: &other
   highlights:
   - Assisted with introductory Computer Science course by co-teaching a lab with another student
   - Worked on a project to let future students program small robots
+- &cs241
+  company: University of Illinois Teaching Assistant
+  position: CS 241
+  startDate: Spring 2016
+  highlights:
+  - Assisted with the development and depoloyment of computer-based quizes and exams
+  - Beta-tested lab assignments and machine problems before they were deployed to students
+  - Wrote autograder test cases and graded student labs and machine problems
 languages:
   proficient:
   - Python
