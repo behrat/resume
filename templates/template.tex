@@ -106,6 +106,9 @@
 \BLOCK{if loop.last}\end{itemize}\BLOCK{endif}
 \BLOCK{endfor}
 
+\resheading{Skills}
+\VAR{outline(resume.skills[0].keywords)}
+
 \BLOCK{if resume.other}
 \BLOCK{for job in resume.other}
 \BLOCK{if loop.first}
@@ -122,9 +125,6 @@
 \BLOCK{if loop.last}\end{itemize}\BLOCK{endif}
 \BLOCK{endfor}
 \BLOCK{endif}
-
-\resheading{Skills}
-\VAR{outline(resume.skills[0].keywords)}
 
 \BLOCK{if resume.publications}
 %\newpage
