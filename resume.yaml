@@ -114,7 +114,7 @@ work:
   location: Champaign, IL
   summary: "Developed Locus: A vehicular-based content management network for location-centric applications"
   highlights:
-  - &locus-exp Gained experience with Wi-Fi, OBDII, GPS, Android, energy efficient protocols and DTN protocols
+  - &locus-exp Developed on Linux, Android, Wi-Fi, GPS and OBD-II with energy-efficient, delay-tolerant protocols
   - &locus-presentation The team presented two demos, a paper, and a poster at conferences, including ACM CHANTS, SIGMOBILE, MobiOpp, and MobiCom
   - Second-place best poster at the MobiCom 2012 Student Research Competition
   - Won second-place best poster at CHANTS 2012
