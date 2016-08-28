@@ -4,6 +4,7 @@ education:
 - << : *uiuc_bs
   highlights: []
 work:
+- *intel 
 - *ra
 - <<: *del
   highlights:

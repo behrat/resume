@@ -66,7 +66,7 @@
 
 \BLOCK{ set basics = resume.basics }
 \begin{tabular*}{20cm}{l@{\extracolsep{\fill}}r}
-\textbf{\huge \VAR{basics.name}} & \VAR{basics.website} \\
+\textbf{\Huge \VAR{basics.name}} & \VAR{basics.website} \\
 \VAR{basics.email} & (Current) \VAR{basics.location.address.current}\\
 \VAR{basics.phone} & (Permanent) \VAR{basics.location.address.permanent}\\
 \end{tabular*}
@@ -98,7 +98,7 @@
 \begin{itemize}
 \BLOCK{endif}
 \item
-    \ressubheading{\VAR{job.company}}{\VAR{job.location}}{\VAR{job.position}}{\VAR{job.startDate} -- \VAR{job.endDate}}
+    \ressubheading{\VAR{job.company}}{\VAR{job.location}}{\VAR{job.position}}{\VAR{job.startDate}\BLOCK{if job.endDate} -- \VAR{job.endDate}\BLOCK{endif}}
     \BLOCK{if job.summary}
     \item[]{\VAR{job.summary}}\vspace{-6pt}
     \BLOCK{endif}

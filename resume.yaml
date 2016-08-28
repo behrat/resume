@@ -5,7 +5,7 @@ basics: &basics
   website: https://ehrat.io
   location:
     address:
-      current: 501 W Green St, Urbana IL 61801
+      current: 609 W Main St, Apt 16, Urbana IL 61801
       permanent: 729 N 1200 St, Shobonier IL 62885
     city: Champaign
     countryCode: US
@@ -24,14 +24,14 @@ objective: &objective To object a summer 2016 intership
 education:
 - &uiuc_ms
   institution: University of Illinois at Urbana-Champaign
-  location: Champaign, IL
+  location: Champaign, Illinois
   area: Computer Science
   endDate: (Expected) May 2017
   startDate: August 2015
   studyType: Master of Science
 - &uiuc_bs 
   institution: University of Illinois at Urbana-Champaign
-  location: Champaign, IL
+  location: Champaign, Illinois
   area: Computer Science
   endDate: May 2013
   gpa: 3.48/4.0
@@ -40,14 +40,14 @@ education:
     - "College of Engineering Dean's List for Academic Excellence - Fall 2009, Spring 2012"
 - &hs
   institution: Vandalia Community High School
-  location: Vandalia, IL
+  location: Vandalia, Illinois
   gpa: 4.61/5.0
   endDate: Graduated May 2009
   highlights:
     - "ACT: 30 (Math Score: 35) and Illinois State Scholar"
 - &kc
   institution: Kaskaskia College
-  location: Centrailia, IL
+  location: Centrailia, Illinois
   gpa: 3.8/4.0
   endDate: Graduated May 2009
   highlights:
@@ -55,7 +55,7 @@ education:
 work:
 - &ra
   company: UIUC Department of Computer Science
-  location: Champaign, IL
+  location: Champaign, Illinois
   startDate: August 2015
   endDate: Present
   position: Research and Teaching Assistant
@@ -65,22 +65,31 @@ work:
     - "Processed the data through Google Cloud products: PubSub, BigQuery, Dataflow and Endpoints"
 - &del
   company: Dair-E-Land Holsteins
-  location: Augsburg, IL
+  location: Augsburg, Illinois
   position: Technician, Developer, and Laborer
   startDate: '1999'
   endDate: Present
   summary: Dairy and grain operation owned by my family with about 130 milking cows
     and 900 farmed acres
   highlights:
-  - &autofeed Built a system to automatically feed our cows, using a PLC with web-based control
+  - &autofeed Automated our cow feed system using a PLC with web-based management, saving two hours of labor daily
   - &mptcp Improved Internet access by using Multipath TCP to simultaneously utilize two
     ISPs
   - &cowtv Enabled remote monitoring of cows through IP cameras viewed on a webpage,
     TVs, and phones
   - &practical Acquired practical, hands-on experience involving operating tractors and machinery, mechanical and electrical systems, troubleshooting, and caring for animals, all while developing a strong work ethic
+- &intel
+  company: Intel Corporation
+  location: Santa Clara, California
+  startDate: Summer 2016
+  position: Software Architect Intern
+  summary:
+  highlights:
+    - Built a REST API for role-based access control as-a-service backed by Consul key-value store
+    - Implemented a docker container for trust-based access to secrets with Intel's Cloud Integrity Technology
 - &nyx
   company: Nyx Technology
-  location: Chicago, IL
+  location: Chicago, Illinois
   position: DevOps Engineer
   startDate: January 2014
   endDate: August 2015
@@ -91,7 +100,7 @@ work:
     - Designed to be secure, scalable, and resilient to failure by following current best practices
 - &rvbd
   company: Riverbed Technology
-  location: Champaign, IL
+  location: Champaign, Illinois
   website: http://riverbed.com
   startDate: May 2013
   endDate: April 2015
@@ -102,7 +111,7 @@ work:
   - &exchange Maintained automation for testing optimization of the Microsoft Exchange protocol
   - &android Built performance and feature tests for an Android application that optimized mobile SSL traffic 
   - &intern12 Interned during Summer 2012 to build performance tests for an Android application that optimized mobile SSL traffic
-  - &intern Tested performance of optimized SSL traffic on Android (Summer 2012 Internship)
+  - &intern "Summer 2012 Internship: Tested performance of optimized SSL traffic on Android"
   - - Developed tool for crawling a website on a mobile browser to generate HTTP traffic
       for testing
     - Gained experience with Python, Android development, and Selenium WebDriver
@@ -111,7 +120,7 @@ work:
   startDate: March 2011
   endDate: May 2013
   position: Undergraduate Research Assistant
-  location: Champaign, IL
+  location: Champaign, Illinois
   summary: "Developed Locus: A vehicular-based content management network for location-centric applications"
   highlights:
   - &locus-exp Developed on Linux, Android, Wi-Fi, GPS and OBD-II with energy-efficient, delay-tolerant protocols
@@ -130,7 +139,7 @@ work:
   highlights:
   - Provided technical assistance for University Housing residents and responded to
     network problems
-  location: Champaign, IL
+  location: Champaign, Illinois
   position: Network Technician
   startDate: August 2010
 skills:
