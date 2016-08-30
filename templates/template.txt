@@ -35,7 +35,7 @@ EXPERIENCE
 {{ job.company }}
 {{ job.position }}
 {{ job.location }}
-{{job.startDate}} - {{job.endDate}}
+{{job.startDate}}{% if job.endDate %} - {% endif %}{{job.endDate}}
 {% if job.summary %}{{job.summary|wordwrap}}
 {% endif %}
 {{ outline(job.highlights) -}}
