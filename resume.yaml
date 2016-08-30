@@ -20,7 +20,7 @@ basics: &basics
   - network: Facebook
     url: https://www.facebook.com/bradenehrat
     username: bradenehrat
-objective: &objective To object a summer 2016 intership
+objective: &objective To object a summer 2016 internship
 education:
 - &uiuc_ms
   institution: University of Illinois at Urbana-Champaign
@@ -47,7 +47,7 @@ education:
     - "ACT: 30 (Math Score: 35) and Illinois State Scholar"
 - &kc
   institution: Kaskaskia College
-  location: Centrailia, Illinois
+  location: Centralia, Illinois
   gpa: 3.8/4.0
   endDate: Graduated May 2009
   highlights:
@@ -85,15 +85,15 @@ work:
   position: Software Architect Intern
   summary:
   highlights:
-    - Built a REST API for role-based access control as-a-service backed by Consul key-value store
-    - Implemented a docker container for trust-based access to secrets with Intel's Cloud Integrity Technology
+    - Implemented a REST API using Django Rest Framework with a custom Consul key-value storage backend
+    - "Built a docker container for trust-based access to secrets with Intel's Cloud Integrity Technology"
 - &nyx
   company: Nyx Technology
   location: Chicago, Illinois
   position: DevOps Engineer
   startDate: January 2014
   endDate: August 2015
-  summary: Nyx is a startup that allows customers to order food and drinks on their  mobile device at resaurants and bars
+  summary: Nyx is a startup that allows customers to order food and drinks on their  mobile device at restaurants and bars
   highlights:
   - Developed a backend in Amazon Web Services to store a menu, login users, take orders with payments
   - - Both Android and iOS clients communicate with the backend over a REST API
@@ -185,7 +185,7 @@ other: &other
   position: CS 241
   startDate: Spring 2016
   highlights:
-  - Assisted with the development and depoloyment of computer-based quizes and exams
+  - Assisted with the development and deployment of computer-based quizzes and exams
   - Beta-tested lab assignments and machine problems before they were deployed to students
   - Wrote autograder test cases and graded student labs and machine problems
 languages:

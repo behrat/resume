@@ -51,7 +51,7 @@ __TOC__
 <block>endif</block>
 <div class="row">
 <div class="large-9 columns"><h3><var>job.company</var></h3>''<var>job.position</var>''</div>
-<div class="large-3 columns"><small><b><var>job.location</var><br><var>job.startDate|replace(", ","<br>")</var>&#8212;<var>job.endDate</var></b></small></div>
+<div class="large-3 columns"><small><b><var>job.location</var><br><var>job.startDate|replace(", ","<br>")</var><block>if job.endDate</block>&#8212;<var>job.endDate</var><block>endif</block></b></small></div>
 </div> <!--row-->
 
 <block>if job.summary</block>
