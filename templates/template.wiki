@@ -65,4 +65,3 @@ __TOC__
 <var>outline(resume.skills[0].keywords)</var>
 
 {{hCardHidden}}
-
