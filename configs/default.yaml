@@ -4,19 +4,19 @@ education:
 - << : *uiuc_bs
   highlights: []
 work:
-- *intel 
 - *ra
 - <<: *del
   highlights:
   - *autofeed
   - *mptcp
   - *cowtv
-- *nyx
+- *intel 
 - <<: *rvbd
   highlights:
   - *azure
   - *exchange
   - *intern
+- *nyx
 - <<: *locus
   highlights:
   - *locus-exp

@@ -32,27 +32,25 @@ __TOC__
 <block>endmacro</block>
 
 <block>for degree in resume.education</block>
-<block>if loop.first</block>
-== Education ==
-<block>endif</block>
+<block>if loop.first</block>== Education ==<block>endif</block>
+
 <div class="row">
-<div class="large-12 columns"><h3><var>degree.institution</var></h3></div>
+  <div class="large-12 columns"><h3><var>degree.institution</var></h3></div>
 </div><!--row-->
 
 <div class="row">
-<div class="large-9 columns">''<var>degree.studyType</var> in <var>degree.area</var>''</div>
-<div class="large-3 columns"><small><b><i><block>if degree.startDate</block><var>degree.startDate</var>&#8212;<block>endif</block><var>degree.endDate</var></i></b></small></div>
+  <div class="large-9 columns">''<var>degree.studyType</var> in <var>degree.area</var>''</div>
+  <div class="large-3 columns"><small><b><i><block>if degree.startDate</block><var>degree.startDate</var>&#8212;<block>endif</block><var>degree.endDate</var></i></b></small></div>
 </div><!--row-->
 <block>endfor</block>
 
 <block>for job in resume.work</block>
-<block>if loop.first</block>
-== Experience ==
-<block>endif</block>
+<block>if loop.first</block>== Experience ==<block>endif</block>
+
 <div class="row">
-<div class="large-9 columns"><h3><var>job.company</var></h3>''<var>job.position</var>''</div>
-<div class="large-3 columns"><small><b><var>job.location</var><br><var>job.startDate|replace(", ","<br>")</var><block>if job.endDate</block>&#8212;<var>job.endDate</var><block>endif</block></b></small></div>
-</div> <!--row-->
+  <div class="large-9 columns"><h3><var>job.company</var></h3>''<var>job.position</var>''</div>
+  <div class="large-3 columns"><small><b><var>job.location</var><br><var>job.startDate|replace(", ","<br>")</var><block>if job.endDate</block>&#8212;<var>job.endDate</var><block>endif</block></b></small></div>
+</div><!--row-->
 
 <block>if job.summary</block>
 <var>job.summary</var>

@@ -59,10 +59,10 @@ work:
   startDate: August 2015
   endDate: Present
   position: Research and Teaching Assistant
-  summary: "Research demo: Working Out with IoT - Pairing and Automated Data Collection in a Gym Environment"
+  summary: "Currently researching robotic manipulation and perception of elastic objects, such as wire harnesses" 
   highlights:
-    - Collected metrics through Bluetooth LE sensors on gym machines and users, while preserving user privacy
-    - "Processed the data through Google Cloud products: PubSub, BigQuery, Dataflow and Endpoints"
+    - "Research demo: Working Out with IoT - Pairing and Automated Data Collection in a Gym Environment"
+    - - "Processed metrics from Bluetooth sensors on Google Cloud Platform, while preserving user privacy"
 - &del
   company: Dair-E-Land Holsteins
   location: Augsburg, Illinois
@@ -87,17 +87,6 @@ work:
   highlights:
     - Implemented a REST API using Django Rest Framework with a custom Consul key-value storage backend
     - "Built a docker container for trust-based access to secrets with Intel's Cloud Integrity Technology"
-- &nyx
-  company: Nyx Technology
-  location: Chicago, Illinois
-  position: DevOps Engineer
-  startDate: January 2014
-  endDate: August 2015
-  summary: Nyx is a startup that allows customers to order food and drinks on their  mobile device at restaurants and bars
-  highlights:
-  - Developed a backend in Amazon Web Services to store a menu, login users, take orders with payments
-  - - Both Android and iOS clients communicate with the backend over a REST API
-    - Designed to be secure, scalable, and resilient to failure by following current best practices
 - &rvbd
   company: Riverbed Technology
   location: Champaign, Illinois
@@ -115,6 +104,17 @@ work:
   - - Developed tool for crawling a website on a mobile browser to generate HTTP traffic
       for testing
     - Gained experience with Python, Android development, and Selenium WebDriver
+- &nyx
+  company: Nyx Technology
+  location: Chicago, Illinois
+  position: DevOps Engineer
+  startDate: January 2014
+  endDate: August 2015
+  summary: Nyx is a startup that allows customers to order food and drinks on their  mobile device at restaurants and bars
+  highlights:
+  - Developed a backend in Amazon Web Services to store a menu, login users, take orders with payments
+  - - Both Android and iOS clients communicate with the backend over a REST API
+    - Designed to be secure, scalable, and resilient to failure by following current best practices
 - &locus
   company: UIUC Department of Computer Science
   startDate: March 2011
