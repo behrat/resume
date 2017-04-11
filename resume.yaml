@@ -59,10 +59,12 @@ work:
   startDate: August 2015
   endDate: Present
   position: Research and Teaching Assistant
-  summary: "Currently researching robotic manipulation and perception of elastic objects, such as wire harnesses" 
+  summary: "Currently researching robotic manipulation and perception of elastic objects, such as wire harnesses"
   highlights:
-    - "Research demo: Working Out with IoT - Pairing and Automated Data Collection in a Gym Environment"
-    - - "Processed metrics from Bluetooth sensors on Google Cloud Platform, while preserving user privacy"
+    - "Enabled real-time control of two ABB industrial robotic arms with ROS (Robot Operating System)"
+    - "Previously researched IoT with a demo using bluetooth sensors and secure processing on Google Cloud"
+#    - "Research demo: Working Out with IoT - Pairing and Automated Data Collection in a Gym Environment"
+#    - - "Processed metrics from Bluetooth sensors on Google Cloud Platform, while preserving user privacy"
 - &del
   company: Dair-E-Land Holsteins
   location: Augsburg, Illinois
