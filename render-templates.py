@@ -34,11 +34,11 @@ except OSError as exception:
     if exception.errno != errno.EEXIST:
         raise
 
-with open(output_dir + "/resume-ehrat.json", "wb") as fh:
-    fh.write(json.dumps(resume, indent=4))
+with open(output_dir + "/resume-ehrat.json", "w") as fh:
+    json.dump(resume, fh, indent=4)
 
-with open(output_dir + "/resume-ehrat.yaml", "wb") as fh:
-    fh.write(yaml.dump(resume, default_flow_style=False))
+with open(output_dir + "/resume-ehrat.yaml", "w") as fh:
+    yaml.dump(resume, fh, default_flow_style=False)
 
 JINJA_TEMPLATES_FOLDER = 'templates'
 jinja_loader = jinja2.FileSystemLoader(JINJA_TEMPLATES_FOLDER)
