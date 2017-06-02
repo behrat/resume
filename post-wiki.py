@@ -14,5 +14,5 @@ result = page.edit(text=wikitext,
           summary="Publish",
           bot=True)
 
-print "Wiki POST result:"
+print("Wiki POST result:")
 pprint(result)

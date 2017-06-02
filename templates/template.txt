@@ -14,7 +14,7 @@
 {{basics.website}}
 {{basics.phone}}
 {{basics.email}}
-{% for (label, address) in basics.location.address.iteritems() %}
+{% for (label, address) in basics.location.address.items() %}
 {{address}} ({{label|capitalize}})
 {% endfor %}
 
